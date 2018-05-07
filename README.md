@@ -10,3 +10,5 @@ Set your DB credential in the `.env` file.
 Run the following:
 
 `$ docker-compose up -d`
+
+Remember to remove the file `phpinfo.php` before to publish your app.
