@@ -5,7 +5,7 @@ services:
     restart: always
     build: .
     volumes:
-      - ./www:/var/www/html
+      - ./:/var/www/html
     env_file: .env
     links:
       - mysqldb:mysqldb
