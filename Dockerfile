@@ -1,7 +1,7 @@
 FROM php:7.2.5-apache
 
-RUN docker-php-ext-install mysqli pdo_mysql
+RUN docker-php-ext-install pdo_mysql mysqli
 
-COPY www/ /var/www/html/
+COPY . /var/www/html/
 
 EXPOSE 8080
